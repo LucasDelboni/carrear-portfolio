@@ -3,9 +3,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
-import LocationCityIcon from '@material-ui/icons/LocationCity';
 import Grid from '@material-ui/core/Grid';
+import LocationCityIcon from '@material-ui/icons/LocationCity';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -16,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     // minHeight: '100vh',
-    backgroundColor: 'rgb(239, 239, 239)'
   },
   main: {
     marginTop: theme.spacing(8),
