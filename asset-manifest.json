@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/career-portfolio/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/career-portfolio/static/js/main.8747fc48.chunk.js",
-    "main.js.map": "/career-portfolio/static/js/main.8747fc48.chunk.js.map",
+    "main.css": "/career-portfolio/static/css/main.27532726.chunk.css",
+    "main.js": "/career-portfolio/static/js/main.926b0bb7.chunk.js",
+    "main.js.map": "/career-portfolio/static/js/main.926b0bb7.chunk.js.map",
     "runtime-main.js": "/career-portfolio/static/js/runtime-main.2d34ecbe.js",
     "runtime-main.js.map": "/career-portfolio/static/js/runtime-main.2d34ecbe.js.map",
-    "static/js/2.74da61bf.chunk.js": "/career-portfolio/static/js/2.74da61bf.chunk.js",
-    "static/js/2.74da61bf.chunk.js.map": "/career-portfolio/static/js/2.74da61bf.chunk.js.map",
+    "static/css/2.f681e662.chunk.css": "/career-portfolio/static/css/2.f681e662.chunk.css",
+    "static/js/2.c3c2c427.chunk.js": "/career-portfolio/static/js/2.c3c2c427.chunk.js",
+    "static/js/2.c3c2c427.chunk.js.map": "/career-portfolio/static/js/2.c3c2c427.chunk.js.map",
     "index.html": "/career-portfolio/index.html",
-    "precache-manifest.af6a0f4aec1611da5b0313f7f010f2e0.js": "/career-portfolio/precache-manifest.af6a0f4aec1611da5b0313f7f010f2e0.js",
+    "precache-manifest.46875575caa32b2a3e7a7b68b7e88f3b.js": "/career-portfolio/precache-manifest.46875575caa32b2a3e7a7b68b7e88f3b.js",
     "service-worker.js": "/career-portfolio/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/career-portfolio/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.74da61bf.chunk.js.LICENSE.txt": "/career-portfolio/static/js/2.74da61bf.chunk.js.LICENSE.txt",
+    "static/css/2.f681e662.chunk.css.map": "/career-portfolio/static/css/2.f681e662.chunk.css.map",
+    "static/css/main.27532726.chunk.css.map": "/career-portfolio/static/css/main.27532726.chunk.css.map",
+    "static/js/2.c3c2c427.chunk.js.LICENSE.txt": "/career-portfolio/static/js/2.c3c2c427.chunk.js.LICENSE.txt",
     "static/media/lucas-delboni.jpg": "/career-portfolio/static/media/lucas-delboni.22d57be8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2d34ecbe.js",
-    "static/js/2.74da61bf.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.8747fc48.chunk.js"
+    "static/css/2.f681e662.chunk.css",
+    "static/js/2.c3c2c427.chunk.js",
+    "static/css/main.27532726.chunk.css",
+    "static/js/main.926b0bb7.chunk.js"
   ]
 }
