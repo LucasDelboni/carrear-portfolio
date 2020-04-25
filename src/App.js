@@ -4,6 +4,7 @@ import About from './section/About';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Career from './section/Career';
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -11,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center'
   },
   pageContent: {
-    backgroundColor: 'rgb(239, 239, 239)',
+    backgroundColor: 'rgb(227, 227, 227)',
     padding: 0
   },
 }));
@@ -24,6 +25,7 @@ function App() {
       <CssBaseline />
       <Container className={classes.pageContent}>
         <About />
+        <Career />
         <Contact />
       </Container>
     </div>

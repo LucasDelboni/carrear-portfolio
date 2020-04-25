@@ -1,0 +1,11 @@
+.main-item span {
+  color:black
+}
+
+.vertical-timeline-element--work span {
+  text-align: initial;
+}
+
+.vertical-timeline-element--education span {
+  text-align: initial;
+}
