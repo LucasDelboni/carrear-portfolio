@@ -14,8 +14,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '40vh',
-    backgroundColor: 'white',
   },
   main: {
     marginTop: theme.spacing(8),
@@ -65,7 +63,7 @@ export default function About() {
               </Typography>
               <Typography align='justify' component="h2" gutterBottom>
                 Nasci no Espírito Santo e vim à São Paulo para cursar sistemas de informação na EACH-USP. Quero me desenvolver e 
-                ajudar outras pessoas deixando um impacto positivo. Gosto de desafios e tenho bastante vontade de aprender."
+                ajudar outras pessoas deixando um impacto positivo. Gosto de desafios e tenho bastante vontade de aprender.
               </Typography>
               <div className={classes.icons}>
                 <LinkedInIcon className={classes.iconSize}/>

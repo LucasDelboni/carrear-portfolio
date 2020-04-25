@@ -6,6 +6,7 @@ import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Career from './section/Career';
 import Interests from './section/Interests';
+import Skills from './section/Skills';
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -26,6 +27,7 @@ function App() {
       <CssBaseline />
       <Container className={classes.pageContent}>
         <About />
+        <Skills />
         <Career />
         <Interests />
         <Contact />
