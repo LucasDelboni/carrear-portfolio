@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/career-portfolio/static/css/main.5f361e03.chunk.css",
+    "main.js": "/career-portfolio/static/js/main.d6c2a4df.chunk.js",
+    "main.js.map": "/career-portfolio/static/js/main.d6c2a4df.chunk.js.map",
+    "runtime-main.js": "/career-portfolio/static/js/runtime-main.2d34ecbe.js",
+    "runtime-main.js.map": "/career-portfolio/static/js/runtime-main.2d34ecbe.js.map",
+    "static/js/2.2e3aa2ef.chunk.js": "/career-portfolio/static/js/2.2e3aa2ef.chunk.js",
+    "static/js/2.2e3aa2ef.chunk.js.map": "/career-portfolio/static/js/2.2e3aa2ef.chunk.js.map",
+    "index.html": "/career-portfolio/index.html",
+    "precache-manifest.c9840056e8c64ea2922eb81cc26b8bcd.js": "/career-portfolio/precache-manifest.c9840056e8c64ea2922eb81cc26b8bcd.js",
+    "service-worker.js": "/career-portfolio/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/career-portfolio/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.2e3aa2ef.chunk.js.LICENSE.txt": "/career-portfolio/static/js/2.2e3aa2ef.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/career-portfolio/static/media/logo.5d5d9eef.svg",
+    "static/media/lucas-delboni.jpg": "/career-portfolio/static/media/lucas-delboni.22d57be8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d34ecbe.js",
+    "static/js/2.2e3aa2ef.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.d6c2a4df.chunk.js"
+  ]
+}
