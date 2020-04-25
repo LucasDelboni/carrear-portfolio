@@ -9,6 +9,7 @@ import photo from '../static/lucas-delboni.jpg';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,7 +39,8 @@ const useStyles = makeStyles((theme) => ({
   },
   iconSize: {
     fontSize: '60px',
-    marginRight: '10%'
+    marginRight: '10%',
+    color: 'black'
   }
 }));
 
@@ -65,11 +67,19 @@ export default function About() {
                 Nasci no Espírito Santo e vim à São Paulo para cursar sistemas de informação na EACH-USP. Quero me desenvolver e 
                 ajudar outras pessoas deixando um impacto positivo. Gosto de desafios e tenho bastante vontade de aprender.
               </Typography>
+
               <div className={classes.icons}>
-                <LinkedInIcon className={classes.iconSize}/>
-                <GitHubIcon className={classes.iconSize}/>
-                <InstagramIcon className={classes.iconSize}/>
+                <Link href='https://www.linkedin.com/in/lucasdelboni/' target="_blank" rel="noopener">
+                  <LinkedInIcon className={classes.iconSize}/>
+                </Link>
+                <Link href='https://www.github.com/LucasDelboni' target="_blank" rel="noopener">
+                  <GitHubIcon className={classes.iconSize}/>
+                </Link>
+                <Link href='https://www.instagram.com/l0ucas.delboni/' target="_blank" rel="noopener">
+                  <InstagramIcon className={classes.iconSize}/>
+                </Link>
               </div>
+
             </Container>
           </Grid>
         </Grid>

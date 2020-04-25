@@ -9,6 +9,7 @@ import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,11 +29,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function contactList(Icon, text){
+function contactList(Icon, text, link){
+  const icon = link ? 
+    (<Link href={link} target="_blank" rel="noopener">
+      <Icon style={{color: 'black'}}/>
+    </Link>) : 
+    (<Icon style={{color: 'black'}}/>);
+
   return (
     <Grid container wrap="nowrap" spacing={2}>
       <Grid item>
-        <Icon />
+        {icon}
       </Grid>
       <Grid item>
       <Typography variant="h5" component="h2" gutterBottom>
@@ -40,7 +47,7 @@ function contactList(Icon, text){
       </Typography>
       </Grid>
     </Grid>
-  )
+  );
 }
 
 export default function Contact() {
@@ -55,9 +62,9 @@ export default function Contact() {
         </Typography>
         {contactList(LocationCityIcon, 'São Paulo - SP')}
         {contactList(EmailIcon, 'lucas.delboni2@gmail.com')}
-        {contactList(LinkedInIcon, 'linkedin.com/in/lucasdelboni/')}
-        {contactList(GitHubIcon, 'github.com/LucasDelboni')}
-        {contactList(InstagramIcon, 'instagram.com/l0ucas.delboni/')}
+        {contactList(LinkedInIcon, 'lucasdelboni', 'https://www.linkedin.com/in/lucasdelboni/')}
+        {contactList(GitHubIcon, 'LucasDelboni', 'https://www.github.com/LucasDelboni')}
+        {contactList(InstagramIcon, 'l0ucas.delboni', 'https://www.instagram.com/l0ucas.delboni/')}
       </Container>
     </div>
   );

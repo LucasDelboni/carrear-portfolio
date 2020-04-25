@@ -91,12 +91,6 @@ export default function Skills() {
                   Mysql
                 </Typography>
                 <Typography variant="body2" component="p">
-                  REST
-                </Typography>
-                <Typography variant="body2" component="p">
-                  git
-                </Typography>
-                <Typography variant="body2" component="p">
                   Jira
                 </Typography>
               </CardContent>
