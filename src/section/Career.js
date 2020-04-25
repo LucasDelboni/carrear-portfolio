@@ -14,32 +14,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     // backgroundColor: 'white',
+    marginTop: theme.spacing(8),
+    marginBottom: theme.spacing(8),
   },
-  // main: {
-  //   marginTop: theme.spacing(8),
-  //   marginBottom: theme.spacing(8),
-  // },
-  // highlight: {
-  //   color: 'rgb(0,128,0)'
-  // },
-  // bigAvatar: {
-  //   fontSize: '80px',
-  //   width: 'auto',
-  //   height: 'auto'
-  // },
-  // content: {
-  //   height: '100%',
-  //   position: 'relative'
-  // },
-  // icons: {
-  //   position: 'absolute',
-  //   bottom: 0,
-  //   width: '100%'
-  // },
-  // iconSize: {
-  //   fontSize: '60px',
-  //   marginRight: '10%'
-  // }
 }));
 
 export default function Career() {
@@ -48,8 +25,9 @@ export default function Career() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <Typography variant="h2" component="h1" gutterBottom>
-        Carreira
+      
+      <Typography variant="h4" component="h1" gutterBottom>
+        CARREIRA
       </Typography>
 
       <VerticalTimeline>

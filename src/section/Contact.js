@@ -50,8 +50,8 @@ export default function Contact() {
     <div className={classes.root}>
       <CssBaseline />
       <Container component="main" className={classes.main} maxWidth="sm">
-        <Typography variant="h2" component="h1" gutterBottom>
-          Contato
+        <Typography variant="h4" component="h1" gutterBottom>
+          CONTATO
         </Typography>
         {contactList(LocationCityIcon, 'São Paulo - SP')}
         {contactList(EmailIcon, 'lucas.delboni2@gmail.com')}

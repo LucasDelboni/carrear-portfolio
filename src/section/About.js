@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(8),
   },
   highlight: {
-    color: 'rgb(0,128,0)'
+    color: 'rgb(33, 150, 243)'
   },
   bigAvatar: {
     fontSize: '80px',
