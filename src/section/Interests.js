@@ -23,8 +23,6 @@ const useStyles = makeStyles((theme) => ({
   card: {
     backgroundColor: 'rgb(33, 150, 243)',
     color: 'white',
-    width: '150px',
-    height: '150px',
   },
   iconSize: {
     fontSize: '60px',
@@ -37,11 +35,11 @@ export default function Interests() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <Container component="main" className={classes.main} maxWidth="sm">
+      <Container component="main" className={classes.main} >
         <Typography variant="h4" component="h1" gutterBottom>
           INTERESSES
         </Typography>
-        <Grid container spacing={3}>
+        <Grid container spacing={10} justify="space-around">
           <Grid item xs={12} sm={4}>
             <Card className={classes.card}>
               <CardContent>
