@@ -28,20 +28,10 @@ const useStyles = makeStyles((theme) => ({
     width: 'auto',
     height: 'auto'
   },
-  content: {
-    height: '100%',
-    position: 'relative'
-  },
-  icons: {
-    position: 'absolute',
-    bottom: 0,
-    width: '100%'
-  },
   iconSize: {
     fontSize: '60px',
-    marginRight: '10%',
     color: 'black'
-  }
+  },
 }));
 
 export default function About() {
@@ -56,29 +46,35 @@ export default function About() {
             <Avatar className={classes.bigAvatar} alt="Lucas Delboni" src={photo} />
           </Grid>
           <Grid item xs={12} sm={8}>
-            <Container className={classes.content}>
-              <Typography align='justify' variant="h4" component="h1" gutterBottom>
-                OI, EU SOU O <span className={classes.highlight}>LUCAS DELBONI</span>
-              </Typography>
-              <Typography align='justify' variant="h5" component="h1" gutterBottom>
-                Engenheiro de software
-              </Typography>
-              <Typography align='justify' component="h2" gutterBottom>
-                Nasci no Espírito Santo e vim à São Paulo para cursar sistemas de informação na EACH-USP. Quero me desenvolver e 
-                ajudar outras pessoas deixando um impacto positivo. Gosto de desafios e tenho bastante vontade de aprender.
-              </Typography>
+            <Container className={classes.content} style={{height: '100%'}}>
+              <Grid item container direction="column" justify="space-between" style={{height: '100%'}}>
+                <Grid item>
+                  <Typography align='justify' variant="h4" component="h1" gutterBottom>
+                    OI, EU SOU O <span className={classes.highlight}>LUCAS DELBONI</span>
+                  </Typography>
+                  <Typography align='justify' variant="h5" component="h1" gutterBottom>
+                    Engenheiro de software
+                  </Typography>
+                  <Typography align='justify' component="h2" gutterBottom>
+                    Nasci no Espírito Santo e vim à São Paulo para cursar sistemas de informação na EACH-USP. Quero me desenvolver e 
+                    ajudar outras pessoas deixando um impacto positivo. Gosto de desafios e tenho bastante vontade de aprender.
+                  </Typography>
+                </Grid>
 
-              <div className={classes.icons}>
-                <Link href='https://www.linkedin.com/in/lucasdelboni/' target="_blank" rel="noopener">
-                  <LinkedInIcon className={classes.iconSize}/>
-                </Link>
-                <Link href='https://www.github.com/LucasDelboni' target="_blank" rel="noopener">
-                  <GitHubIcon className={classes.iconSize}/>
-                </Link>
-                <Link href='https://www.instagram.com/l0ucas.delboni/' target="_blank" rel="noopener">
-                  <InstagramIcon className={classes.iconSize}/>
-                </Link>
-              </div>
+                <Grid item className={classes.right}>
+                  <Grid item container justify="space-around">
+                    <Link href='https://www.linkedin.com/in/lucasdelboni/' target="_blank" rel="noopener">
+                      <LinkedInIcon className={classes.iconSize}/>
+                    </Link>
+                    <Link href='https://www.github.com/LucasDelboni' target="_blank" rel="noopener">
+                      <GitHubIcon className={classes.iconSize}/>
+                    </Link>
+                    <Link href='https://www.instagram.com/l0ucas.delboni/' target="_blank" rel="noopener">
+                      <InstagramIcon className={classes.iconSize}/>
+                    </Link>
+                  </Grid>
+                </Grid>
+              </Grid>
 
             </Container>
           </Grid>
