@@ -24,6 +24,9 @@ const theme = createMuiTheme({
     primary: {
       main: '#000'
     }
+  },
+  color: {
+    primary: 'rgb(33, 150, 243)'
   }
 });
 

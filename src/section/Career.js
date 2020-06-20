@@ -42,7 +42,7 @@ export default function Career() {
         >
           <h3 className="vertical-timeline-element-title">Engenheiro de Software Full-stack</h3>
           <h4 className="vertical-timeline-element-subtitle">Gradus Soluções</h4>
-          <p>AngularJS, react, Java, Dropwizard, protractor.</p>
+          <p>AngularJS, React, Java, Dropwizard, Protractor</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

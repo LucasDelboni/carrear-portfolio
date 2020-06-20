@@ -4,11 +4,11 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
 import BookIcon from '@material-ui/icons/Book';
 import DirectionsBikeIcon from '@material-ui/icons/DirectionsBike';
 import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
+import InterestCard from '../components/InterestCard';
+import ExploreIcon from '@material-ui/icons/Explore';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(8),
   },
   card: {
-    backgroundColor: 'rgb(33, 150, 243)',
+    backgroundColor: theme.color.primary,
     color: 'white',
   },
   iconSize: {
@@ -32,6 +32,27 @@ const useStyles = makeStyles((theme) => ({
 export default function Interests() {
   const classes = useStyles();
 
+  const bookCard = {
+    icon: (<BookIcon className={classes.iconSize} />),
+    primaryText: 'Livros',
+    secondaryText: 'Ficção científica, política, desenvolvimento pessoal',
+  };
+  const bikeCard = {
+    icon: (<DirectionsBikeIcon className={classes.iconSize} />),
+    primaryText: 'Ciclismo',
+    secondaryText: 'Pela cidade ou campo',
+  };
+  const videogameCard = {
+    icon: (<VideogameAssetIcon className={classes.iconSize} />),
+    primaryText: 'Jogos',
+    secondaryText: 'Sobrevivência, cooperativo, as escolhas importam',
+  };
+  const exploreCard = {
+    icon: (<ExploreIcon className={classes.iconSize} />),
+    primaryText: 'Explorar',
+    secondaryText: 'O mundo têm muita coisa nova para conhecer',
+  };
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -40,42 +61,23 @@ export default function Interests() {
           INTERESSES
         </Typography>
         <Grid container spacing={10} justify="space-around">
-          <Grid item xs={12} sm={4}>
-            <Card className={classes.card}>
-              <CardContent>
-                <BookIcon className={classes.iconSize}/>
-                <Typography variant="h5">
-                  Livros
-                </Typography>
-              </CardContent>
-            </Card>
+          <Grid item xs={12} sm={3}>
+            <InterestCard icon={bookCard.icon} primaryText={bookCard.primaryText} secondaryText={bookCard.secondaryText} />
           </Grid>
 
-          <Grid item xs={12} sm={4}>
-            <Card className={classes.card}>
-              <CardContent>
-                <DirectionsBikeIcon className={classes.iconSize}/>
-                <Typography variant="h5">
-                  Ciclismo
-                </Typography>
-              </CardContent>
-            </Card>
+          <Grid item xs={12} sm={3}>
+            <InterestCard icon={bikeCard.icon} primaryText={bikeCard.primaryText} secondaryText={bikeCard.secondaryText} />
           </Grid>
 
-          <Grid item xs={12} sm={4}>
-            <Card className={classes.card}>
-              <CardContent>
-                <VideogameAssetIcon className={classes.iconSize}/>
-                <Typography variant="h5">
-                  Jogos
-                </Typography>
-              </CardContent>
-            </Card>
+          <Grid item xs={12} sm={3}>
+            <InterestCard icon={videogameCard.icon} primaryText={videogameCard.primaryText} secondaryText={videogameCard.secondaryText} />
+          </Grid>
+
+          <Grid item xs={12} sm={3}>
+            <InterestCard icon={exploreCard.icon} primaryText={exploreCard.primaryText} secondaryText={exploreCard.secondaryText} />
           </Grid>
         </Grid>
-        
-       
-        
+
       </Container>
     </div>
   );
