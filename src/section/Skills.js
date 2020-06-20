@@ -40,7 +40,7 @@ export default function Skills() {
           <Grid item xs={12} sm={3}>
             <Card className={classes.card}>
               <CardContent>
-                <Typography variant="h5">
+                <Typography variant="subtitle1">
                   Java
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -59,7 +59,7 @@ export default function Skills() {
           <Grid item xs={12} sm={3}>
             <Card className={classes.card}>
               <CardContent>
-                <Typography variant="h5">
+                <Typography variant="subtitle1">
                   HTML5/CSS3/JavaScript
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -78,7 +78,7 @@ export default function Skills() {
           <Grid item xs={12} sm={3}>
             <Card className={classes.card}>
               <CardContent>
-                <Typography variant="h5">
+                <Typography variant="subtitle1">
                   Outros
                 </Typography>
                 <Typography variant="body2" component="p">
@@ -100,7 +100,7 @@ export default function Skills() {
           <Grid item xs={12} sm={3}>
             <Card className={classes.card}>
               <CardContent>
-                <Typography variant="h5">
+                <Typography variant="subtitle1">
                   Aprendendo
                 </Typography>
                 <Typography variant="body2" component="p">

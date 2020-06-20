@@ -22,11 +22,12 @@ const useStyles = makeStyles((theme) => ({
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#000'
-    }
+      main: 'rgb(33, 150, 243)',
+      dark: 'rgb(33, 107, 243)',
+    },
   },
   color: {
-    primary: 'rgb(33, 150, 243)'
+    primary: 'rgb(33, 150, 243)',
   }
 });
 

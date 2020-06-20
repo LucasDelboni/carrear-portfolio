@@ -40,7 +40,7 @@ function contactList(Icon, text, link) {
 
   const textLink = link ?
     (
-      <Link href={link} target="_blank" rel="noopener">
+      <Link href={link} target="_blank" rel="noopener" color="textPrimary">
         {text}
       </Link>
     ) : (

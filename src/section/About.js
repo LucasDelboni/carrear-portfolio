@@ -8,8 +8,8 @@ import Avatar from '@material-ui/core/Avatar';
 import photo from '../static/lucas-delboni.jpg';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import InstagramIcon from '@material-ui/icons/Instagram';
 import Link from '@material-ui/core/Link';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   iconSize: {
     fontSize: '60px',
-    color: 'black'
+    color: 'black',
   },
 }));
 
@@ -61,7 +61,7 @@ export default function About() {
                   </Typography>
                 </Grid>
 
-                <Grid item className={classes.right}>
+                <Grid item>
                   <Grid item container justify="space-around">
                     <Link href='https://www.linkedin.com/in/lucasdelboni/' target="_blank" rel="noopener">
                       <LinkedInIcon className={classes.iconSize}/>
@@ -69,9 +69,9 @@ export default function About() {
                     <Link href='https://www.github.com/LucasDelboni' target="_blank" rel="noopener">
                       <GitHubIcon className={classes.iconSize}/>
                     </Link>
-                    <Link href='https://www.instagram.com/l0ucas.delboni/' target="_blank" rel="noopener">
-                      <InstagramIcon className={classes.iconSize}/>
-                    </Link>
+                    <Button variant="contained" color="primary" download="lucas-delboni.pdf" href="curriculo.pdf">
+                      Currículo
+                    </Button>
                   </Grid>
                 </Grid>
               </Grid>
