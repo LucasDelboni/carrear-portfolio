@@ -43,14 +43,14 @@ export default function About() {
       <Container component="main" className={classes.main}>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={4}>
-            <Avatar className={classes.bigAvatar} alt="Lucas Delboni" src={photo} />
+            <Avatar className={classes.bigAvatar} alt="Lucas Covre Delboni" src={photo} />
           </Grid>
           <Grid item xs={12} sm={8}>
             <Container className={classes.content} style={{height: '100%'}}>
               <Grid item container direction="column" justify="space-between" style={{height: '100%'}}>
                 <Grid item>
                   <Typography align='justify' variant="h4" component="h1" gutterBottom>
-                    OI, EU SOU O <span className={classes.highlight}>LUCAS DELBONI</span>
+                    OI, EU SOU O <span className={classes.highlight}>LUCAS COVRE DELBONI</span>
                   </Typography>
                   <Typography align='justify' variant="h5" component="h1" gutterBottom>
                     Engenheiro de software

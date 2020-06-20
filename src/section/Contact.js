@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    // minHeight: '100vh',
   },
   main: {
     marginTop: theme.spacing(8),
@@ -29,12 +28,24 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function contactList(Icon, text, link){
-  const icon = link ? 
-    (<Link href={link} target="_blank" rel="noopener">
-      <Icon style={{color: 'black'}}/>
-    </Link>) : 
-    (<Icon style={{color: 'black'}}/>);
+function contactList(Icon, text, link) {
+  const icon = link ?
+    (
+      <Link href={link} target="_blank" rel="noopener">
+        <Icon style={{ color: 'black' }} />
+      </Link>
+    ) : (
+      <Icon style={{ color: 'black' }} />
+    );
+
+  const textLink = link ?
+    (
+      <Link href={link} target="_blank" rel="noopener">
+        {text}
+      </Link>
+    ) : (
+      text
+    );
 
   return (
     <Grid container wrap="nowrap" spacing={2}>
@@ -42,9 +53,9 @@ function contactList(Icon, text, link){
         {icon}
       </Grid>
       <Grid item>
-      <Typography variant="h5" component="h2" gutterBottom>
-        {text}
-      </Typography>
+        <Typography variant="h5" component="h2" gutterBottom>
+          {textLink}
+        </Typography>
       </Grid>
     </Grid>
   );
